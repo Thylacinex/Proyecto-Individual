@@ -1,0 +1,141 @@
+.card {
+  display: inline-block;
+  width: 150px;
+  padding: 1em;
+  border-radius: 15px;
+  margin: 10px;
+  background: #ddd;
+  text-align: left;
+  box-shadow: 0px 5px 20px -10px #111111;
+  position: relative;
+  transition: 0.4s;
+}
+.card__caption {
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 1em;
+  position: relative;
+  border-radius: 0 0 3px 3px;
+}
+.card__image-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 1em 1em 0;
+  border-radius: 3px 3px 0 0;
+}
+.card__type-simplified {
+  width: 13%;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 1em;
+}
+.card__type {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  padding: 0.25em;  
+  background: #bbbbbb;
+}
+.card__name {
+  font-family: "Open Sans Condensed", "Open Sans", helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+/* SEGUN EL TYPO */
+.card--normal {
+  background: linear-gradient(110deg, #FDBB2D 0%, #3A1C71 100%);
+  box-shadow: 0px 5px 20px -10px #3A1C71;
+}
+.type--normal {
+  background-color: #C08A53;
+}
+.card--water {
+  background: linear-gradient(120deg, #1CB5E0 0%, #000851 100%);
+  box-shadow: 0px 5px 20px -10px #000851;
+}
+.type--water {
+  background-color: #1CB5E0;
+}
+.card--electric {
+  background: linear-gradient(90deg, #ffde00 34%, #e8ff99 83%);
+}
+.type--electric {
+  background-color: #ffde00;
+}
+.card--fire {
+  background: linear-gradient(0deg, #c71800 10%, #fcc245 100%);
+}
+.type--fire {
+  background-color: #c71800;
+}
+.card--psychic {
+  background: linear-gradient(140deg, #ffa7f9 0%, #ff2cc3 39%, #ffe3a7 100%);
+}
+.type--psychic {
+  background-color: #ff2cc3;
+}
+.card--dark {
+  background: linear-gradient(20deg, #191919 0%, #100b32 33%, #5c0249 100%);
+}
+.type--dark {
+  background-color: #5c0249;
+}
+.card--grass {
+  background: linear-gradient(140deg, #c4da3d 0%, #6e7f0e 69%, #275009 100%);
+}
+.type--grass {
+  background-color: #6e7f0e;
+}
+.card--ice {
+  background: linear-gradient(230deg, #caeaf6 0%, #a0eaf1 46%, #6fb8eb 100%);
+}
+.type--ice {
+  background-color: #6fb8eb;
+}
+.card--fairy {
+  background: linear-gradient(45deg, #ffe6f0 0%, #ffc5e0 34%, #ffa6b9 71%, #ff8a95 100%);
+}
+.type--fairy {
+  background-color: #ff8a95;
+}
+
+/* ANIMACION */
+.card:nth-child(1) {
+  transform: translateY(0px) rotate(3deg);
+}
+.card:nth-child(2) {
+  transform: translateY(0px) rotate(-2deg);
+}
+.card:nth-child(3) {
+  transform: translateY(0px) rotate(1deg);
+}
+.card:nth-child(4) {
+  transform: translateY(0px) rotate(-1deg);
+}
+.card:nth-child(5) {
+  transform: translateY(0px) rotate(3deg);
+}
+.card:nth-child(6) {
+  transform: translateY(0px) rotate(3deg);
+}
+.card:nth-child(7) {
+  transform: translateY(0px) rotate(-4deg);
+}
+.card:nth-child(8) {
+  transform: translateY(0px) rotate(2deg);
+}
+.card:nth-child(9) {
+  transform: translateY(0px) rotate(-2deg);
+}
+.card:hover {
+  z-index: 5;
+  box-shadow: 0px 13px 30px -15px #000000;
+  transform: translateY(-10px);
+}
