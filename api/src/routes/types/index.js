@@ -2,7 +2,7 @@ const { getTypes } = require('../../controller');
 const { Router } = require('express');
 const axios = require('axios');
 
-const BASE_URL = `https://pokeapi.co/api/v2`;
+//const BASE_URL = `https://pokeapi.co/api/v2`;
 
 const router = Router();
 

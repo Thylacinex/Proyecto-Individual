@@ -2,13 +2,7 @@ const { getData } = require('../../controller');
 const { Router } = require('express');
 const router = Router();
 
-router.post('/', (req, res) => {
-
-})
-
-router.get('/(:idPokemon)?', async (req, res) => {
-
-    // Debe traer solo los datos pedidos en la ruta de detalle de pokemon
+router.get('/:idPokemon?', async (req, res) => {
     // Tener en cuenta que tiene que funcionar tanto para un id de un pokemon
     // existente en pokeapi o uno creado por ustedes
     
@@ -25,6 +19,24 @@ router.get('/(:idPokemon)?', async (req, res) => {
         }
         
 })
+
+router.post('/', (req, res) => {
+    const { name, id, weight, height, types, hp, attack, defense, speed} = req.body;
+
+    res.send(`Pokemon creado ${name}`);
+});
+
+// { 
+//     "name": "Pokecustom", 
+//     "id": 666, 
+//     "weight": "48", 
+//     "height": "48", 
+//     "types": ["Fire"], 
+//     "hp": "48", 
+//     "attack": "48", 
+//     "defense": "48", 
+//     "speed": "48"
+// }
 
 module.exports = router;
 

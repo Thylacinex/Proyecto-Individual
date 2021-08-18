@@ -6,9 +6,9 @@ export const Page = ({ pokemon }) => {
     const { name, id, img, types } = pokemon;
 
     return (
-        <div id="cards">
+        // <div id="cards">
             
-            <figure class={`card card--${types[0]}`}>
+            <figure class={`card__small card--${types[0]}`}>
                 <div class="card__image-container">
                 <img src={img.small} alt={name} class="card__image" />   
                 </div>
@@ -19,7 +19,7 @@ export const Page = ({ pokemon }) => {
                     <div class="card__type-simplified">
                         {types.map(type => {
                             return (
-                                <div class={`card__type type--${type}`}>
+                                <div class={`card__type__small type--${type}`}>
                     
                                 </div>
                             )
@@ -30,7 +30,7 @@ export const Page = ({ pokemon }) => {
 
             </figure>
 
-        </div>
+        // </div>
     )
 
 }

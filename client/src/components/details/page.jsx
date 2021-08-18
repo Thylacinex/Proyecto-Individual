@@ -7,7 +7,7 @@ export const Page = ({ pokemon }) => {
 
     return (
         <>
-            <figure className={`card card--${types[0]}`}>
+            <figure className={`card__big card--${types[0]}`}>
                 <div className="card__image-container">
                 <img src={img.big} alt={name} className="card__image" />   
                 </div>
@@ -18,7 +18,7 @@ export const Page = ({ pokemon }) => {
                     <div className="card__type-container">
                         {types.map(type => {
                             return (
-                                <h3 key={type} className={`card__type type--${type}`}>
+                                <h3 key={type} className={`card__type__big type--${type}`}>
                                     {type}
                                 </h3>
                             )

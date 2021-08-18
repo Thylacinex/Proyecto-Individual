@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import styles from './style.css';
-import { fetchPokemons, fetchPokemon } from '../../modules';
-import { Details } from '../details/';
-import { Cards } from '../cards/';
+/* hooks */
+import { fetchPokemons, fetchPokemon } from './hooks';
+/* Components */
+import { Details } from './components/details';
+import { Cards } from './components/cards';
+import { Navbar } from './components/navbar';
 
-const DITTO = 'https://pokeapi.co/api/v2/pokemon/750/'; //require('../../ditto.json');
+const DITTO = 'https://pokeapi.co/api/v2/pokemon/220/'; //require('../../ditto.json');
 
-export const App = () => {
+const App = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   const [pokemon, setPokemon] = useState('');
@@ -23,8 +26,11 @@ export const App = () => {
 
   return (
     <>
+      <Navbar pokemon={pokemon} />
       <Cards pokemon={pokemon} />
     </>
      
   );
 }
+
+export default App;
